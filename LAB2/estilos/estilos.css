@@ -8,8 +8,18 @@ a{
 	font-size: 18px;
 	padding: 12px;
 	text-decoration: none;
+	-webkit-transition: all 0.5s ease;
+	margin-right: 12px;	
+	border-radius: 8px;
 }
+li:hover, a:hover{
 
+	background: white;
+	color: black;
+	transform: scale(1.2) rotate(-5deg);
+	-webkit-transform:scale(1.2) rotate(-5deg);
+	transition:all 0.5s ease;
+}
 .articulo1,.articulo2, .formulario{
 	display: inline-block;
 	vertical-align: top;
@@ -27,6 +37,9 @@ a{
 .formulario{
 	background: #D35C10;
 	padding: 15px;
+	opacity: 0;
+	height: 0;
+	width: 0;
 }
 
 body{
@@ -109,7 +122,6 @@ nav ul li{
 	display: inline-block;
 	background: #BE3F33;
 	padding: 10px;
-	margin-right: 12px;	
 	border-radius: 8px;
 }
 
